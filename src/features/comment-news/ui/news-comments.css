@@ -1,0 +1,86 @@
+.news-comments {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.news-comments h2 {
+  margin: 0;
+}
+
+.news-comment-list {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-comment,
+.news-comment-signin {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.news-comment header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 16px;
+}
+
+.news-comment p {
+  margin: 8px 0 0;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.news-comment-signin {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.news-comment-signin p {
+  margin: 0;
+}
+
+.news-comment-form,
+.news-comment-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.news-comment-form {
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.news-comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+  color: inherit;
+  resize: vertical;
+}
+
+.news-comment-form .button {
+  justify-self: start;
+}
+
+.news-comment-form p {
+  margin: 0;
+  color: #ffb3aa;
+}
+
+.news-comment time {
+  color: var(--muted);
+  font-size: 13px;
+}

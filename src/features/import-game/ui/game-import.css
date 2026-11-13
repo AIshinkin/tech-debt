@@ -1,0 +1,118 @@
+.game-import {
+  margin-top: clamp(32px, 6vw, 64px);
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 16px;
+}
+
+.game-import h2 {
+  margin: 0 0 18px;
+}
+
+.admin-search {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.admin-search input {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #101119;
+  color: inherit;
+}
+
+.admin-search {
+  width: min(100%, 350px);
+  margin-bottom: 16px;
+}
+
+.admin-toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: max-content;
+  max-width: min(360px, calc(100% - 32px));
+}
+
+.admin-toast p {
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 6px 24px rgb(0 0 0 / 35%);
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.admin-games {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.admin-game {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.admin-game img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 5px;
+  background: #24273a;
+  object-fit: cover;
+}
+
+.admin-game-name {
+  display: grid;
+  gap: 4px;
+  overflow-wrap: anywhere;
+}
+
+.admin-game-name span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.admin-game-action {
+  display: inline-flex;
+  width: 132px;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.admin-game .admin-row-error {
+  grid-column: 2 / -1;
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 560px) {
+  .admin-game {
+    grid-template-columns: 76px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .admin-game-action {
+    grid-column: 2;
+    justify-self: start;
+  }
+}

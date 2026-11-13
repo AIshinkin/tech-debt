@@ -1,0 +1,33 @@
+dialog {
+  width: min(660px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: clamp(16px, 4vw, 26px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: inherit;
+}
+
+dialog::backdrop { background: rgb(6 7 12 / 78%); }
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.dialog-header h2 { margin: 0; font-size: clamp(20px, 4vw, 26px); }
+
+.close-button {
+  flex-shrink: 0;
+  min-width: 36px;
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #262a3b;
+  color: inherit;
+}
+
+.close-button:hover { color: var(--accent); }
