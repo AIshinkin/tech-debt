@@ -7,7 +7,8 @@
     "dev": "node --env-file-if-exists=.env server/main.js",
     "build": "vite build",
     "preview": "node --env-file-if-exists=.env server/main.js --production",
-    "seed:demo": "node --env-file-if-exists=.env server/seedDemo.js"
+    "seed:demo": "node --env-file-if-exists=.env server/seedDemo.js",
+    "archive": "node -e \"const git = (...args) => require('node:child_process').execFileSync('git', args, { encoding: 'utf8' }); const snapshot = git('stash', 'create').trim() || 'HEAD'; git('archive', '--format=zip', '--prefix=demo-proj/', '--output=demo-proj.zip', snapshot);\""
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.3.0",
