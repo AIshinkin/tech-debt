@@ -1,0 +1,62 @@
+.feedback-inbox {
+  max-width: 860px;
+}
+
+.inbox-list {
+  display: grid;
+  gap: 14px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inbox-message {
+  padding: clamp(16px, 3vw, 24px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+
+.inbox-message-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.inbox-message-header h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.inbox-email {
+  display: block;
+  margin-top: 2px;
+}
+
+.inbox-email,
+.inbox-message-header time {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.inbox-message-header time {
+  flex-shrink: 0;
+}
+
+.inbox-message-text {
+  margin: 14px 0 0;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 560px) {
+  .inbox-message-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
