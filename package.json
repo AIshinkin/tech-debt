@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node --env-file-if-exists=.env server/main.js",
     "build": "vite build",
-    "preview": "node --env-file-if-exists=.env server/main.js --production"
+    "preview": "node --env-file-if-exists=.env server/main.js --production",
+    "seed:demo": "node --env-file-if-exists=.env server/seedDemo.js"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.3.0",
